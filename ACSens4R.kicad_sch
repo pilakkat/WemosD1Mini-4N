@@ -343,17 +343,25 @@
     (uuid a2b368a8-bfc7-4735-87aa-84328cea620e)
   )
 
-  (wire (pts (xy 105.41 97.79) (xy 105.41 102.87))
+  (wire (pts (xy 105.41 100.33) (xy 105.41 102.87))
     (stroke (width 0) (type default))
     (uuid 00b7fc7d-7eec-47fc-8776-9545292b4481)
   )
-  (wire (pts (xy 105.41 87.63) (xy 105.41 90.17))
+  (wire (pts (xy 105.41 90.17) (xy 105.41 92.71))
     (stroke (width 0) (type default))
     (uuid 05301b5b-a849-4900-912d-3eb21975b212)
   )
   (wire (pts (xy 105.41 110.49) (xy 105.41 113.03))
     (stroke (width 0) (type default))
     (uuid 067a4374-783c-4cd2-aa6c-df645135f489)
+  )
+  (wire (pts (xy 105.41 69.85) (xy 105.41 72.39))
+    (stroke (width 0) (type default))
+    (uuid 082f3fe8-e07a-4776-b684-1f82fc672ee0)
+  )
+  (wire (pts (xy 105.41 80.01) (xy 105.41 82.55))
+    (stroke (width 0) (type default))
+    (uuid 0a463176-f032-46cd-8570-707805d8d9ff)
   )
   (wire (pts (xy 130.81 105.41) (xy 130.81 102.87))
     (stroke (width 0) (type default))
@@ -383,13 +391,9 @@
     (stroke (width 0) (type default))
     (uuid a14e85de-e517-4d89-a10a-f8e6b23966e5)
   )
-  (wire (pts (xy 95.25 78.74) (xy 105.41 78.74))
+  (wire (pts (xy 87.63 58.42) (xy 105.41 58.42))
     (stroke (width 0) (type default))
     (uuid a4b92f69-87ef-4471-adb7-85518b43d1ad)
-  )
-  (wire (pts (xy 105.41 78.74) (xy 105.41 80.01))
-    (stroke (width 0) (type default))
-    (uuid a780bc21-952b-412b-8b2f-d9f1fdf8f65e)
   )
   (wire (pts (xy 115.57 105.41) (xy 115.57 102.87))
     (stroke (width 0) (type default))
@@ -419,36 +423,182 @@
     (stroke (width 0) (type default))
     (uuid e0c374e5-a52c-44f8-8fa8-1a864985887b)
   )
+  (wire (pts (xy 105.41 58.42) (xy 105.41 62.23))
+    (stroke (width 0) (type default))
+    (uuid fd42a0fc-051c-4fe1-ada0-8269c5cf872b)
+  )
 
   (text "Square Wave 50Hz" (at 144.78 100.33 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 3b46b30a-6d6b-41c9-a323-3ce419259ab8)
   )
-
-  (hierarchical_label "In~" (shape input) (at 95.25 78.74 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 1ddf0929-05d5-4b6c-993a-cfc6ca2b4469)
+  (text "Due to pull-up 4.4K \non GPIO0, 180K series \nconnection not enough"
+    (at 106.68 54.61 0)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid ce35e486-df1e-4e8e-88c3-f6d563a4bfd0)
   )
-  (hierarchical_label "GND" (shape input) (at 148.59 114.3 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 27f83c66-41f1-482f-a6a1-afa668796434)
+
+  (hierarchical_label "In~" (shape input) (at 87.63 58.42 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 2619ed39-9119-47a0-913f-fd77c0fc03bc)
   )
   (hierarchical_label "AC{slash}N" (shape input) (at 95.25 113.03 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid b48839b1-d5b1-4ade-a614-a5d0c2f5e152)
+    (uuid 6ea744c5-9254-4dc5-95d5-91191030d257)
+  )
+  (hierarchical_label "GND" (shape input) (at 148.59 114.3 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 768787cb-c105-4faa-ada3-90a9468dc695)
   )
   (hierarchical_label "Out" (shape input) (at 148.59 102.87 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid de7208d9-5a39-4cda-afea-c59a9d9d523f)
+    (uuid 8c3ae9b6-cf8b-494a-a427-f07374e14eab)
   )
   (hierarchical_label "+Vs" (shape input) (at 135.89 81.28 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid e8e33d84-df75-4698-bef3-35be61497bba)
+    (uuid ea7e419d-62c2-4899-83de-afaf57c208d3)
+  )
+
+  (symbol (lib_id "Device:R") (at 105.41 76.2 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 150dbb86-6d19-4387-9764-4d4157cddbc8)
+    (property "Reference" "R4" (at 107.95 74.93 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "22K" (at 107.95 77.47 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" (at 103.632 76.2 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 105.41 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 49a56dba-b44d-46d7-9c3b-5581dbb94b26))
+    (pin "2" (uuid e44bc6d0-98e1-4f6c-a746-315d0726d36a))
+    (instances
+      (project "ACSensor-3N"
+        (path "/43c7d2b2-3332-4bfb-aaee-3621698f636b"
+          (reference "R4") (unit 1)
+        )
+      )
+      (project "WemosD1Mini-8266"
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f"
+          (reference "R3") (unit 1)
+        )
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75"
+          (reference "R12") (unit 1)
+        )
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/66876193-2fba-4979-8b9d-7a278e785394"
+          (reference "R1") (unit 1)
+        )
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/15191232-bfca-406d-b338-801fdd1a9e5c"
+          (reference "R4") (unit 1)
+        )
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/1ae34b38-aca0-4700-ad5e-623b50610aae"
+          (reference "R7") (unit 1)
+        )
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/b7b34fc0-8b63-4b2a-a659-db8d2e431c26"
+          (reference "R11") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R") (at 105.41 96.52 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 49ded19d-5a9a-44c3-a77c-ad827f5b7168)
+    (property "Reference" "R4" (at 107.95 95.25 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "22K" (at 107.95 97.79 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" (at 103.632 96.52 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 105.41 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 5c6d3531-a303-40af-b11f-8855c11417c1))
+    (pin "2" (uuid 6e836684-f23e-4de3-9c59-26a8710cfd0c))
+    (instances
+      (project "ACSensor-3N"
+        (path "/43c7d2b2-3332-4bfb-aaee-3621698f636b"
+          (reference "R4") (unit 1)
+        )
+      )
+      (project "WemosD1Mini-8266"
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f"
+          (reference "R3") (unit 1)
+        )
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75"
+          (reference "R12") (unit 1)
+        )
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/66876193-2fba-4979-8b9d-7a278e785394"
+          (reference "R2") (unit 1)
+        )
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/15191232-bfca-406d-b338-801fdd1a9e5c"
+          (reference "R5") (unit 1)
+        )
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/1ae34b38-aca0-4700-ad5e-623b50610aae"
+          (reference "R8") (unit 1)
+        )
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/b7b34fc0-8b63-4b2a-a659-db8d2e431c26"
+          (reference "R13") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:Earth") (at 135.89 116.84 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 8b0e6f0a-57ee-4dda-9103-50a098159310)
+    (property "Reference" "#PWR01" (at 135.89 123.19 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "Earth" (at 135.89 120.65 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 135.89 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 135.89 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c5182372-2e2a-4f5a-b269-74b1a6400ad2))
+    (instances
+      (project "ACSensor-3N"
+        (path "/43c7d2b2-3332-4bfb-aaee-3621698f636b"
+          (reference "#PWR01") (unit 1)
+        )
+      )
+      (project "WemosD1Mini-8266"
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f"
+          (reference "#PWR05") (unit 1)
+        )
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75"
+          (reference "#PWR010") (unit 1)
+        )
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/66876193-2fba-4979-8b9d-7a278e785394"
+          (reference "#PWR07") (unit 1)
+        )
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/15191232-bfca-406d-b338-801fdd1a9e5c"
+          (reference "#PWR01") (unit 1)
+        )
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/1ae34b38-aca0-4700-ad5e-623b50610aae"
+          (reference "#PWR02") (unit 1)
+        )
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/b7b34fc0-8b63-4b2a-a659-db8d2e431c26"
+          (reference "#PWR0101") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "Diode:1N4148") (at 105.41 106.68 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 015df113-d5e1-4423-a496-d832cb51baa2)
+    (uuid 8c1ba626-97a2-4896-ae08-517e1d8ce89b)
     (property "Reference" "D2" (at 107.95 105.41 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
@@ -491,47 +641,8 @@
         (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/1ae34b38-aca0-4700-ad5e-623b50610aae"
           (reference "D3") (unit 1)
         )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:Earth") (at 135.89 116.84 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 17e3ae8f-9289-4f52-9e68-d066b2407233)
-    (property "Reference" "#PWR01" (at 135.89 123.19 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "Earth" (at 135.89 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "" (at 135.89 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 135.89 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c5182372-2e2a-4f5a-b269-74b1a6400ad2))
-    (instances
-      (project "ACSensor-3N"
-        (path "/43c7d2b2-3332-4bfb-aaee-3621698f636b"
-          (reference "#PWR01") (unit 1)
-        )
-      )
-      (project "WemosD1Mini-8266"
-        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f"
-          (reference "#PWR05") (unit 1)
-        )
-        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75"
-          (reference "#PWR010") (unit 1)
-        )
-        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/66876193-2fba-4979-8b9d-7a278e785394"
-          (reference "#PWR07") (unit 1)
-        )
-        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/15191232-bfca-406d-b338-801fdd1a9e5c"
-          (reference "#PWR01") (unit 1)
-        )
-        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/1ae34b38-aca0-4700-ad5e-623b50610aae"
-          (reference "#PWR02") (unit 1)
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/b7b34fc0-8b63-4b2a-a659-db8d2e431c26"
+          (reference "D4") (unit 1)
         )
       )
     )
@@ -539,7 +650,7 @@
 
   (symbol (lib_id "Isolator:PC817") (at 123.19 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 641cd5df-7d90-46e6-ba6a-27bf9380692a)
+    (uuid 8da02670-8d86-423c-b548-cb5a0b189950)
     (property "Reference" "U2" (at 123.19 99.06 0)
       (effects (font (size 1.27 1.27)))
     )
@@ -578,13 +689,62 @@
         (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/1ae34b38-aca0-4700-ad5e-623b50610aae"
           (reference "U3") (unit 1)
         )
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/b7b34fc0-8b63-4b2a-a659-db8d2e431c26"
+          (reference "U4") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R") (at 105.41 66.04 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid a46b5f0b-dbd7-446e-9bab-f8159db74945)
+    (property "Reference" "R4" (at 107.95 64.77 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "22K" (at 107.95 67.31 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" (at 103.632 66.04 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 105.41 66.04 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c0e929a3-9972-436a-a260-3b628b00206f))
+    (pin "2" (uuid bec328e1-6a56-4e72-ac1b-546e387cd122))
+    (instances
+      (project "ACSensor-3N"
+        (path "/43c7d2b2-3332-4bfb-aaee-3621698f636b"
+          (reference "R4") (unit 1)
+        )
+      )
+      (project "WemosD1Mini-8266"
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f"
+          (reference "R3") (unit 1)
+        )
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75"
+          (reference "R12") (unit 1)
+        )
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/66876193-2fba-4979-8b9d-7a278e785394"
+          (reference "R1") (unit 1)
+        )
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/15191232-bfca-406d-b338-801fdd1a9e5c"
+          (reference "R4") (unit 1)
+        )
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/1ae34b38-aca0-4700-ad5e-623b50610aae"
+          (reference "R7") (unit 1)
+        )
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/b7b34fc0-8b63-4b2a-a659-db8d2e431c26"
+          (reference "R10") (unit 1)
+        )
       )
     )
   )
 
   (symbol (lib_id "Device:R") (at 135.89 91.44 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 66ae0819-2a93-4f29-bbcb-d511ec3fb384)
+    (uuid e4f98f6d-0de5-400b-bcb6-99fb112c833d)
     (property "Reference" "R6" (at 138.43 90.17 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
@@ -621,23 +781,26 @@
         (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/1ae34b38-aca0-4700-ad5e-623b50610aae"
           (reference "R9") (unit 1)
         )
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/b7b34fc0-8b63-4b2a-a659-db8d2e431c26"
+          (reference "R14") (unit 1)
+        )
       )
     )
   )
 
-  (symbol (lib_id "Device:R") (at 105.41 83.82 0) (unit 1)
+  (symbol (lib_id "Device:R") (at 105.41 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid b5ad5070-0813-437c-8e49-9ba0247f7999)
-    (property "Reference" "R4" (at 107.95 82.55 0)
+    (uuid faab203e-7107-417f-a457-e45b411af39a)
+    (property "Reference" "R4" (at 107.95 85.09 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "180K" (at 107.95 85.09 0)
+    (property "Value" "22K" (at 107.95 87.63 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 103.632 83.82 90)
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" (at 103.632 86.36 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 105.41 83.82 0)
+    (property "Datasheet" "~" (at 105.41 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 68f33312-d875-4bab-9ee9-d93129c434b7))
@@ -664,48 +827,8 @@
         (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/1ae34b38-aca0-4700-ad5e-623b50610aae"
           (reference "R7") (unit 1)
         )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 105.41 93.98 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid d61d7b2a-1c07-40a0-bb52-7dd494b3f0a4)
-    (property "Reference" "R4" (at 107.95 92.71 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "180K" (at 107.95 95.25 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 103.632 93.98 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 105.41 93.98 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5c6d3531-a303-40af-b11f-8855c11417c1))
-    (pin "2" (uuid 6e836684-f23e-4de3-9c59-26a8710cfd0c))
-    (instances
-      (project "ACSensor-3N"
-        (path "/43c7d2b2-3332-4bfb-aaee-3621698f636b"
-          (reference "R4") (unit 1)
-        )
-      )
-      (project "WemosD1Mini-8266"
-        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f"
-          (reference "R3") (unit 1)
-        )
-        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75"
+        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/b7b34fc0-8b63-4b2a-a659-db8d2e431c26"
           (reference "R12") (unit 1)
-        )
-        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/66876193-2fba-4979-8b9d-7a278e785394"
-          (reference "R2") (unit 1)
-        )
-        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/15191232-bfca-406d-b338-801fdd1a9e5c"
-          (reference "R5") (unit 1)
-        )
-        (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/4578d6cc-30c9-47e3-94c8-3ddc29895f75/1ae34b38-aca0-4700-ad5e-623b50610aae"
-          (reference "R8") (unit 1)
         )
       )
     )

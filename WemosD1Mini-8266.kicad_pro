@@ -55,7 +55,9 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "courtyards_overlap|169754306|134185953|1aca651d-33e1-4002-8a1b-c19b22a58254|a3ca7b40-9e53-4f6a-8764-1c1b0eb16a5a"
+      ],
       "meta": {
         "version": 2
       },
@@ -175,7 +177,8 @@
         0.0,
         0.4,
         0.5,
-        1.0
+        1.0,
+        2.0
       ],
       "via_dimensions": [
         {
@@ -429,6 +432,40 @@
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 1.0,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "AC/L",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.0,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 1.0,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "AC/N",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.0,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -501,16 +538,16 @@
       "ACSense3"
     ],
     [
-      "19c0ba8e-7d3f-40fe-8245-d6b4888bdeb8",
-      "ACSense4"
-    ],
-    [
       "cc373d62-289d-47e3-a37d-3fec368b320a",
       "Relays"
     ],
     [
       "66876193-2fba-4979-8b9d-7a278e785394",
       "ACSense1"
+    ],
+    [
+      "b7b34fc0-8b63-4b2a-a659-db8d2e431c26",
+      "ACSens4R"
     ]
   ],
   "text_variables": {}
