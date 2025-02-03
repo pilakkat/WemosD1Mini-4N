@@ -31,7 +31,8 @@ The design was done for using with Tasmota firmware, but user can use any firmwa
 Additional usage instructions and examples.
 
 ## ⚙️ Configuration for Tasmota
-Following configuration can be used for Tasmota firmware
+Following configuration can be used for Tasmota firmware.
+
 ![Configuration for Tasmota devices](Pics/config.png)
 
 ## 📜 License
