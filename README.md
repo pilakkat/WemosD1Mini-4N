@@ -17,9 +17,9 @@ This is PCB design for smart control based on ESP8266 Wemos D1 mini module. It h
 The board can be fitted behind the switchboard as an after market fit without rewiring, provided there is a neutral line available. 
 
 ## 🖼 Screenshots
-![Top View 1](pics/top1.png)
-![Top View 2](pics/top2.png)
-![Bottom View](pics/bottom1.png)
+![Top View 1](Pics/top1.png)
+![Top View 2](Pics/top2.png)
+![Bottom View](Pics/bottom1.png)
 
 ## 🚀 Usage
 The design was done for using with Tasmota firmware, but user can use any firmware which can support the below configuraton.
@@ -32,7 +32,7 @@ Additional usage instructions and examples.
 
 ## ⚙️ Configuration for Tasmota
 Following configuration can be used for Tasmota firmware
-![Configuration for Tasmota devices](pics/config.png)
+![Configuration for Tasmota devices](Pics/config.png)
 
 ## 📜 License
 
