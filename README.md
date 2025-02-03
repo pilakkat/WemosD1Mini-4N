@@ -4,10 +4,10 @@
 
 ## 📌 Table of Contents
 
-- [About the Project](#about-the-project)
-- [Screenshots](#screenshots)
-- [Usage](#usage)
-- [Configuration for Tasmota](#configuration-fotr-Tasmota)
+- [About the Project](#-about-the-project)
+- [Screenshots](#-screenshots)
+- [Usage](#-usage)
+- [Configuration for Tasmota](#-configuration-fotr-Tasmota)
 
 ---
 
