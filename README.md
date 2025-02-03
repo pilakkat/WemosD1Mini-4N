@@ -35,6 +35,11 @@ Following configuration can be used for Tasmota firmware.
 
 ![Configuration for Tasmota devices](Pics/config.png)
 
+For AC detection circuit, you can also use following additional commands in tasmota console:
+- switchdebounce0 109 : To set AC detection with 100ms debounce time
+- switchmode0 1 : If you want to follow the manual switch instead of toggle every time
+
+
 ## 📜 License
 
 This project is licensed under the MIT License 
