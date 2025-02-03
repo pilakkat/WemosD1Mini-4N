@@ -7,7 +7,7 @@
 - [About the Project](#-about-the-project)
 - [Screenshots](#-screenshots)
 - [Usage](#-usage)
-- [Configuration for Tasmota](#-configuration-fotr-Tasmota)
+- [Configuration for Tasmota](#-configuration-for-Tasmota)
 
 ---
 
