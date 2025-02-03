@@ -1024,10 +1024,10 @@
   (symbol (lib_id "Device:R") (at 41.91 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4573fcaf-78f6-4467-9a66-6c11761df999)
-    (property "Reference" "R17" (at 43.18 105.41 0)
+    (property "Reference" "R16" (at 43.18 105.41 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "480" (at 43.18 107.95 0)
+    (property "Value" "150" (at 43.18 107.95 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 40.132 107.95 90)
@@ -1041,7 +1041,7 @@
     (instances
       (project "WemosD1Mini-8266"
         (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/cc373d62-289d-47e3-a37d-3fec368b320a"
-          (reference "R17") (unit 1)
+          (reference "R16") (unit 1)
         )
       )
     )
@@ -1106,10 +1106,10 @@
   (symbol (lib_id "Device:R") (at 35.56 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7b0aa957-ea37-454d-a695-7bc1ca1a1ac7)
-    (property "Reference" "R18" (at 36.83 105.41 0)
+    (property "Reference" "R15" (at 36.83 105.41 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "480" (at 36.83 107.95 0)
+    (property "Value" "150" (at 36.83 107.95 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 33.782 107.95 90)
@@ -1123,7 +1123,7 @@
     (instances
       (project "WemosD1Mini-8266"
         (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/cc373d62-289d-47e3-a37d-3fec368b320a"
-          (reference "R18") (unit 1)
+          (reference "R15") (unit 1)
         )
       )
     )
@@ -1280,10 +1280,10 @@
   (symbol (lib_id "Device:R") (at 48.26 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ad65030e-effb-4e5e-8d9e-0bb1dc3c7626)
-    (property "Reference" "R15" (at 49.53 105.41 0)
+    (property "Reference" "R17" (at 49.53 105.41 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "480" (at 49.53 107.95 0)
+    (property "Value" "150" (at 49.53 107.95 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 46.482 107.95 90)
@@ -1297,7 +1297,7 @@
     (instances
       (project "WemosD1Mini-8266"
         (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/cc373d62-289d-47e3-a37d-3fec368b320a"
-          (reference "R15") (unit 1)
+          (reference "R17") (unit 1)
         )
       )
     )
@@ -1418,10 +1418,10 @@
   (symbol (lib_id "Device:R") (at 54.61 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e1a6064f-0cd4-401a-89c2-678744645ea1)
-    (property "Reference" "R16" (at 55.88 105.41 0)
+    (property "Reference" "R18" (at 55.88 105.41 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "480" (at 55.88 107.95 0)
+    (property "Value" "150" (at 55.88 107.95 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 52.832 107.95 90)
@@ -1435,7 +1435,7 @@
     (instances
       (project "WemosD1Mini-8266"
         (path "/84e8e68d-ec51-4c17-a8b1-603b22d1189f/cc373d62-289d-47e3-a37d-3fec368b320a"
-          (reference "R16") (unit 1)
+          (reference "R18") (unit 1)
         )
       )
     )
