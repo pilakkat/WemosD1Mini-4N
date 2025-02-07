@@ -35,6 +35,8 @@ The design was done for using with Tasmota firmware, but user can use any firmwa
 
 D0 to D3 supports AC detection circuit. For using ADC divider based configuration, connect three switches between the marked joints (S1,S2,S3). All combinations of key presses and short circuits (SCB/SCG) are detectable via different ADC values if the default specified resistors are used. Other combinations could be used if only one or two switches are needed. 
 
+Note: Refer BOM available under Gerber directory to see the component details.
+
 ## ⚙️ Configuration for Tasmota
 Following configuration can be used for Tasmota firmware.
 
